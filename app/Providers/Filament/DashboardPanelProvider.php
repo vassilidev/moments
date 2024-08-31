@@ -28,14 +28,11 @@ class DashboardPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
-            ->colors([
-                'primary' => Color::Pink,
-            ])
             ->id('dashboard')
             ->path('dashboard')
             ->login()
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => Color::Pink,
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
